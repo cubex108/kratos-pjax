@@ -23,7 +23,7 @@
         <div id="kratos-wrapper">
             <div id="kratos-page">
                 <div id="kratos-header">
-                    <header id="kratos-header-section" class="color-banner" style="background:rgba(22,23,26,.9)">
+                    <header id="kratos-header-section" class="color-banner" style="background:rgba(255,255,255,.9)">
                         <div class="container">
                             <div class="nav-header">
                                 <div class="color-logo"><a href="javascript:window.location.href='/'"><?php if(!kratos_option('banner_logo')) echo bloginfo('name'); else echo '<img src="'.kratos_option('banner_logo').'">'; ?></a></div>

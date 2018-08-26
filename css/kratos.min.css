@@ -474,15 +474,21 @@ td,th{padding:0}
 #kratos-header{position:relative;margin-bottom:0;z-index:5}
 #kratos-header .color-logo img{max-width:200px;height:40px;margin-top:-5px}
 .kratos-nav-toggle{position:fixed;top:11px;right:15px;z-index:999;height:38px;display:none}
-.kratos-nav-toggle i{position:relative;display:inline-block;zoom:1;width:28px;height:2.5px;color:#fff;font:700 14px/.4 Helvetica;text-transform:uppercase;text-indent:-55px;background:#fff;-webkit-transition:.2s;transition:.2s}
-.kratos-nav-toggle i::after,.kratos-nav-toggle i::before{content:'';width:28px;height:2.5px;background:#fff;position:absolute;left:0;-webkit-transition:.2s;transition:.2s}
+.kratos-nav-toggle i{position:relative;display:inline-block;zoom:1;width:28px;height:2.5px;color:#fff;font:700 14px/.4 Helvetica;text-transform:uppercase;text-indent:-55px;background:#444;-webkit-transition:.2s;transition:.2s}
+.kratos-nav-toggle i::after,.kratos-nav-toggle i::before{content:'';width:28px;height:2.5px;background:#444;position:absolute;left:0;-webkit-transition:.2s;transition:.2s}
 .kratos-nav-toggle i::before{top:-9px}
 .kratos-nav-toggle i::after{bottom:-9px}
 .nav-toggle.toon i{background:0 0}
 .nav-toggle.toon i::before{top:0;height:2px;-webkit-transform:rotateZ(45deg);transform:rotateZ(45deg)}
 .nav-toggle.toon i::after{bottom:0;height:2px;-webkit-transform:rotateZ(-45deg);transform:rotateZ(-45deg)}
-#kratos-header-section{padding:0;position:fixed;left:0;width:100%;z-index:2;background:rgba(40,42,44,.6)}
-#kratos-header-section:not(.color-banner) .sf-menu>li:hover>a{background:#eee;color:#666!important}
+#kratos-header-section{padding:0;position:fixed;left:0;width:100%;z-index:2;background:0,0; -webkit-transition:all .4s ease;transition:all .4s ease;}
+#kratos-header-section.yya {position: fixed;left: 0;background: rgba(255, 255, 255, .95)!important;box-shadow: 0 1px 40px -8px rgba(0, 0, 0, .5)}
+#kratos-header-section:hover {background-color: #fff!important}
+#kratos-header-section.gizle {top: -100px;top: 0}
+#kratos-header-section.sabit {top: 0}
+/*#kratos-header-section:not(.color-banner) .sf-menu>li:hover>a{background:#eee;color:#666!important}*/
+#kratos-header-section .sf-menu>li:hover>a{color:#00a6de!important}
+#kratos-header-section .sf-menu>li>a{color:#888!important}
 #kratos-header-section .sf-menu *{list-style:none}
 #kratos-header-section .sf-menu{float:right;list-style:none;margin:0;padding:0}
 #kratos-header-section .sf-menu li{position:relative}
@@ -502,12 +508,12 @@ td,th{padding:0}
 #kratos-menu-wrap .sf-menu a{color:#fff;padding:7px 16px;font-weight:400;font-size:15px;border:none;display:block;position:relative}
 .kratos-cover,.kratos-start{position:relative;height:800px}
 .kratos-cover.kratos-hero-2,.kratos-start.kratos-hero-2{height:320px}
-.kratos-overlay{position:absolute!important;width:100%;top:0;left:0;bottom:0;right:0;z-index:1;background:rgba(66,64,64,.2)}
+.kratos-overlay{position:absolute!important;width:100%;top:0;left:0;bottom:0;right:0;z-index:1;background:rgba(66,64,64,0);background-image: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/dot.gif)}
 .kratos-cover{background-size:cover;position:relative;background-position:center center}
 .kratos-cover .btn{padding:1em 5em;opacity:.9}
 .kratos-cover.kratos-cover_2{height:320px}
 .kratos-cover .desc{top:50%;position:absolute;width:100%;margin-top:-50px;z-index:2;color:#fff;text-shadow:2px 2px 2px #666}
-.kratos-cover .desc h2{color:#fff;text-transform:none;font-size:40px;margin-bottom:10px;display:inline-block}
+/*.kratos-cover .desc h2{color:#fff;text-transform:none;font-size:40px;margin-bottom:10px;display:inline-block}*/
 .kratos-cover .desc p,.kratos-cover .desc span{color:#fff;margin-bottom:30px;font-size:25px;letter-spacing:1px;display:inline-block}
 .kratos-cover .desc span a{color:#fff}
 .kratos-cover .desc span a:focus,.kratos-cover .desc span a:hover{color:#fff!important}
@@ -752,9 +758,9 @@ a.comment-reply-link,a.comment-reply-login{text-decoration:none;padding:2px 5px;
 .wechat-img{bottom:80px;background:#848484;opacity:.7}
 .wechat-img #wechat-pic{display:none}
 .wechat-img img{position:absolute;right:55px;bottom:-55px;width:150px;height:150px}
-#footer{background:#23282d;padding:40px 0 30px}
-#footer p{color:rgba(255,255,255,.3);letter-spacing:1px;font-size:14px;text-transform:uppercase}
-#footer p a{color:rgba(255,255,255,.5)}
+#footer{background:#fff;padding:20px 0 30px}
+#footer p{color:rgba(0,0,0,.5);letter-spacing:1px;font-size:14px;text-transform:uppercase}
+#footer p a{color:rgba(0,0,0,.8)}
 #footer .govimg{display:inline-block;margin-top:-4px;margin-right:6px;width:14px;height:1pc;background:url(../images/icon-police.png) 0 0 no-repeat;vertical-align:middle}
 @media(min-width:992px){#footer .col-md-offset-3{margin-left:10%}#footer .col-md-6{width:80%}}
 .kratos-social-icons>a{padding:4px 14px;color:#51aded}
@@ -803,7 +809,7 @@ h3{font-size:18px}
 h4{font-size:15px}
 .kratos-nav-toggle{display:block}
 .color-logo{text-align:center;width:100%;font-size:25px;font-weight:400;height:60px;padding:7px}
-.color-logo a,.color-logo a:hover{color:#fff!important;padding:15px 0}
+.color-logo a:hover{border-right: 3px solid transparent;-webkit-filter:drop-shadow(3px 0 #37c6c0);filter:drop-shadow(3px 0 #37c6c0);}
 .color-logo img{max-width:175px;height:35px}
 .kratos-cover{height:inherit;padding:3em 0}
 .kratos-start{height:45px!important}
@@ -895,6 +901,7 @@ article .kratos-hentry.kratos-post-inner,.comments-area,.post-navigation{margin-
 @media(min-width:992px) and (max-width:1199px){
 .visible-md{display:block!important}
 .hidden-md{display:none!important}
+	#evanyou{display:none!important}
 }
 @media(min-width:1200px){
 .container{width:1170px}
@@ -912,4 +919,150 @@ body{background:#fff!important}
 .col-md-8,#main,.kratos-post-inner{padding:0}
 #kratos-header,.kratos-start,#kratos-widget-area,.comments-area .avatar,#respond,.cd-tool{display:none}
 .comments-area .comment-awaiting-moderation,.comments-area .comment-meta,.comments-area .fn{margin-left:0}
+}
+#evanyou {
+ position:fixed;
+ width:100%;
+ height:100%;
+ top:0;
+ left:0;
+ z-index:-1;
+}
+
+.center-text {
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+	line-height:1.8;
+}
+
+.glitch {
+    position: relative;
+    color: white;
+    mix-blend-mode: lighten
+}
+
+.glitch:before, .glitch:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+    clip: rect(0, 0, 0, 0)
+}
+
+.glitch:before {
+    left: -1px;
+    text-shadow: 1px 0 #ff3f1a
+}
+
+.glitch:after {
+    left: 1px;
+    text-shadow: -1px 0 #00a7e0
+}
+
+.glitch:hover:before {
+    text-shadow: 4px 0 #ff3f1a;
+    animation: glitch-loop-1 .8s infinite ease-in-out alternate-reverse
+}
+
+.glitch:hover:after {
+    text-shadow: -5px 0 #00a7e0;
+    animation: glitch-loop-2 .8s infinite ease-in-out alternate-reverse
+}
+
+@-webkit-keyframes glitch-loop-1 {
+    0% {
+        clip: rect(36px, 9999px, 9px, 0)
+    }
+    25% {
+        clip: rect(25px, 9999px, 99px, 0)
+    }
+    50% {
+        clip: rect(50px, 9999px, 102px, 0)
+    }
+    75% {
+        clip: rect(30px, 9999px, 92px, 0)
+    }
+    100% {
+        clip: rect(91px, 9999px, 98px, 0)
+    }
+}
+
+@keyframes glitch-loop-1 {
+    0% {
+        clip: rect(36px, 9999px, 9px, 0)
+    }
+    25% {
+        clip: rect(25px, 9999px, 99px, 0)
+    }
+    50% {
+        clip: rect(50px, 9999px, 102px, 0)
+    }
+    75% {
+        clip: rect(30px, 9999px, 92px, 0)
+    }
+    100% {
+        clip: rect(91px, 9999px, 98px, 0)
+    }
+}
+
+@-webkit-keyframes glitch-loop-2 {
+    0% {
+        top: -1px;
+        left: 1px;
+        clip: rect(65px, 9999px, 119px, 0)
+    }
+    25% {
+        top: -6px;
+        left: 4px;
+        clip: rect(79px, 9999px, 19px, 0)
+    }
+    50% {
+        top: -3px;
+        left: 2px;
+        clip: rect(68px, 9999px, 11px, 0)
+    }
+    75% {
+        top: 0;
+        left: -4px;
+        clip: rect(95px, 9999px, 53px, 0)
+    }
+    100% {
+        top: -1px;
+        left: -1px;
+        clip: rect(31px, 9999px, 149px, 0)
+    }
+}
+
+@keyframes glitch-loop-2 {
+    0% {
+        top: -1px;
+        left: 1px;
+        clip: rect(65px, 9999px, 119px, 0)
+    }
+    25% {
+        top: -6px;
+        left: 4px;
+        clip: rect(79px, 9999px, 19px, 0)
+    }
+    50% {
+        top: -3px;
+        left: 2px;
+        clip: rect(68px, 9999px, 11px, 0)
+    }
+    75% {
+        top: 0;
+        left: -4px;
+        clip: rect(95px, 9999px, 53px, 0)
+    }
+    100% {
+        top: -1px;
+        left: -1px;
+        clip: rect(31px, 9999px, 149px, 0)
+    }
+}
+.Ubuntu-font {
+    font-family: 'Ubuntu', sans-serif
 }
